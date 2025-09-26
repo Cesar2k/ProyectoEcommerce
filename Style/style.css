@@ -1,5 +1,6 @@
 /* Contenedor de cards y alinea las tarjetas horizontalmente */
-.card-container {
+.card-container 
+{
   display: flex; /* Usamos flexbox para alinear las tarjetas */
   flex-wrap: wrap; /* Permite que las tarjetas se ajusten a la siguiente línea si no caben */
   gap: 20px; /* Espacio entre las tarjetas */
@@ -9,7 +10,8 @@
 
 /* estilo visual de las Card (fondo blanco, esquina redondas, padding, 
 color titulo y boton, efecto Hover y sombras) */
-.card {
+.card 
+{
   background: #fff; /* Fondo blanco */
   border-radius: 8px; /* Esquinas redondeadas */
   box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
