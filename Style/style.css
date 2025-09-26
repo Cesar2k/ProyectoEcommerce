@@ -1,103 +1,115 @@
 /* Contenedor de cards y alinea las tarjetas horizontalmente */
 .card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
+  display: flex; /* Usamos flexbox para alinear las tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten a la siguiente línea si no caben */
+  gap: 20px; /* Espacio entre las tarjetas */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  margin-top: 20px; /* Espacio superior */
 }
 
 /* estilo visual de las Card (fondo blanco, esquina redondas, padding, 
 color titulo y boton, efecto Hover y sombras) */
 .card {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  padding: 15px;
-  max-width: 200px;
-  text-align: center;
-  transition: transform 0.3s ease;
+  background: #fff; /* Fondo blanco */
+  border-radius: 8px; /* Esquinas redondeadas */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
+  padding: 15px; /* Espacio interno */
+  max-width: 200px; /* Ancho máximo */
+  text-align: center; /* Centra el texto */
+  transition: transform 0.3s ease; /* Transición suave para el efecto hover */
 }
 
-.card:hover {
-  transform: scale(1.05);
+.card:hover /* Efecto hover */
+{ 
+  transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
 }
 
-.card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
+.card img /* Imagen dentro de la card */
+{
+  width: 100%; /* Ocupa todo el ancho de la card */
+  border-radius: 8px; /* Esquinas redondeadas */
+  margin-bottom: 10px; /* Espacio inferior */
 }
 
-.card h2 {
-  color: #4CAF50;
-  font-size: 1.2em;
-  margin-bottom: 5px;
+.card h2 /* Título dentro de la card */
+{
+  color: #4CAF50; /* Color verde */
+  font-size: 1.2em; /* Tamaño de fuente */
+  margin-bottom: 5px; /* Espacio inferior */
 }
 
-.card p {
-  font-weight: bold;
-  color: #333;
+.card p /* Descripción dentro de la card */
+{
+  font-weight: bold; /* Negrita */
+  color: #333; /* Color gris oscuro */
 }
 
-.card button {
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.3s ease;
+.card button /* Botón dentro de la card */
+{
+  background-color: #4CAF50; /* Color verde */
+  color: #fff; /* Texto blanco */
+  padding: 8px 12px; /* Espacio interno */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Esquinas redondeadas */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  font-size: 14px; /* Tamaño de fuente */
+  transition: background-color 0.3s ease; /* Transición suave para el efecto hover */
 }
 
-.card button:hover {
-  background-color: #388E3C;
+.card button:hover /* Efecto hover del botón */
+{
+  background-color: #388E3C; /* Color verde más oscuro al pasar el ratón */
 }
 
 /* Estilos. Centra y da espacio al parrafo y limita el ancho */
-main {
-  padding: 20px;
-  max-width: 1200px;
-  margin: auto;
+main /* Contenedor principal */ 
+{
+  padding: 20px;      /* Espacio interno */
+  max-width: 1200px; /* Ancho máximo */
+  margin: auto;     /* Centra el contenedor */
 }
-main p {
-  text-align: center;
-  font-size: 1.1em; 
-  margin-bottom: 20px; 
+main p  /* Párrafo dentro del main */
+{
+  text-align: center;     /* Centra el texto */
+  font-size: 1.1em;      /* Tamaño de fuente */
+  margin-bottom: 20px;  /* Espacio inferior */
 }
 /* Definimos fuente, colores y estilo de titulo */
 /* links en este caso */
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
-  line-height: 1.6;
+body /* Estilo global del cuerpo */ 
+{
+  font-family: 'Roboto', sans-serif; /* Fuente Roboto */
+  background-color: #2a362f;      /* Fondo gris claro */
+  color: #333;                   /* Color de texto gris oscuro */
+  line-height: 1.6;               /* Altura de línea para mejorar la legibilidad */
 }
+
 /* Nav, haders y links */
 /*Importantes, creamos barra verde, menu horizontal, links blancos y efecto Hover */
-
-h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
-  color: #4CAF50; 
-  text-align: center;
-  margin-bottom: 15px;
+h1, h2, h3  /* Títulos */
+{
+  font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
+  color: #b9c6ca; /* Color azul grisáceo */
+  text-align: center; /* Centra el texto */
+  margin-bottom: 15px; /* Espacio inferior */
 }
 
 /* Menú */
-nav ul li a {
-  font-family: 'Montserrat', sans-serif;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 12px;
-  transition: background-color 0.3s ease;
+nav ul li a /* Links del menú */ 
+{
+  font-family: 'Montserrat', sans-serif; /* Fuente Montserrat */
+  color: #fff; /* Color blanco */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold; /* Negrita */
+  padding: 8px 12px; /* Espacio interno */ 
+  transition: background-color 0.3s ease; /* Transición suave para el efecto hover */
 }
 /* Barra verde */
-header {
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 10px 0;
+header /* Encabezado */
+{
+  background-color: #86d130; /* Color verde */
+  color: #fff; /* Texto blanco */
+  padding: 10px 0; /* Espacio interno */
 }
 
 /* Nav flex horizontal*/
@@ -134,8 +146,7 @@ nav ul li a:hover {
 
 /* Registro e Ingreso */
 
-/* ===== Estilo login / registro ===== */
-
+/*  Estilo login / registro  */
 body.login, body.registro {
   background-color: #f5f5f5;
   display: flex;
@@ -200,7 +211,7 @@ body.login, body.registro {
   background-color: #388E3C;
 }
 
-/* Placeholder más claro */
+/* Placeholder (marcador) más claro */
 .form-container input::placeholder {
   color: #aaa;
 }
@@ -212,7 +223,7 @@ body.login, body.registro {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: 'Poppins', sans-serif; /* 👈 Esto aplica Poppins a todo el body */
+  font-family: 'Poppins', sans-serif; /
 }
 
 /* Contenedor del formulario */
@@ -223,7 +234,7 @@ body.login, body.registro {
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
   width: 320px;
   text-align: center;
-  font-family: 'Poppins', sans-serif; /* 👈 También lo podés poner aquí */
+  font-family: 'Poppins', sans-serif; 
 }
 
 /* Título */
