@@ -81,8 +81,8 @@ main p  /* Párrafo dentro del main */
 body /* Estilo global del cuerpo */ 
 {
   font-family: 'Roboto', sans-serif; /* Fuente Roboto */
-  background-color: #2a362f;      /* Fondo gris claro */
-  color: #333;                   /* Color de texto gris oscuro */
+  background-color: #141414;      /* Fondo gris claro */
+  color: #ffffff;                   /* Color de texto gris oscuro */
   line-height: 1.6;               /* Altura de línea para mejorar la legibilidad */
 }
 
