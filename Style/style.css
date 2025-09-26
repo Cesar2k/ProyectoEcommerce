@@ -1,0 +1,265 @@
+/* Contenedor de cards y alinea las tarjetas horizontalmente */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* estilo visual de las Card (fondo blanco, esquina redondas, padding, 
+color titulo y boton, efecto Hover y sombras) */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  max-width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  color: #4CAF50;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-weight: bold;
+  color: #333;
+}
+
+.card button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #388E3C;
+}
+
+/* Estilos. Centra y da espacio al parrafo y limita el ancho */
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+main p {
+  text-align: center;
+  font-size: 1.1em; 
+  margin-bottom: 20px; 
+}
+/* Definimos fuente, colores y estilo de titulo */
+/* links en este caso */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+/* Nav, haders y links */
+/*Importantes, creamos barra verde, menu horizontal, links blancos y efecto Hover */
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #4CAF50; 
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Menú */
+nav ul li a {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+/* Barra verde */
+header {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 0;
+}
+
+/* Nav flex horizontal*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Logo */
+nav img {
+  margin-right: 20px;
+}
+
+/* Lista horizontal */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cada item del menú */
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a:hover {
+  background-color: #388E3C;
+  border-radius: 4px;
+}
+
+/* Registro e Ingreso */
+
+/* ===== Estilo login / registro ===== */
+
+body.login, body.registro {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contenedor del formulario */
+.form-container {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 320px;
+  text-align: center;
+}
+
+/* Imagen superior */
+.form-container img {
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+/* Títulos */
+.form-container h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.form-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-container input:focus {
+  border-color: #4CAF50;
+}
+
+/* Botón */
+.form-container button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.form-container button:hover {
+  background-color: #388E3C;
+}
+
+/* Placeholder más claro */
+.form-container input::placeholder {
+  color: #aaa;
+}
+
+/* Logien y registro */
+body.login, body.registro {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif; /* 👈 Esto aplica Poppins a todo el body */
+}
+
+/* Contenedor del formulario */
+.form-container {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 320px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif; /* 👈 También lo podés poner aquí */
+}
+
+/* Título */
+.form-container h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #4CAF50;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.form-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Botón */
+.form-container button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+.form-container button:hover {
+  background-color: #388E3C;
+}
+
