@@ -9,15 +9,20 @@
         <!--En google fonts podemos encontrar varias fuentes de letras. Forma de asegurar que se van a ver las letras que nosotros elegimos, ya que si las espeficamos
         desde la pc, solo se ven si estan en la pc-->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet"> <!-- fuente desde Google Fonts -->
+        <link rel="stylesheet" href="../css/style.css">   <!--Enlace a la hoja de estilos-->
+        <script src="../js/navbar.js" defer></script> 
+        <script src="../js/productos.js" defer></script>
 
-        <link rel="stylesheet" href="../style.css">
+        
+
+          <script>document.addEventListener("DOMContentLoaded", () => mostrarProductos("mate"));</script>
 
     </head>
     <body>
         <header>
             <nav>                
                     <a href="../index.html"> <!--Imagen envuelta en un link HTML. permite apretar la imagen de cualquier categoria y volver al home-->
-                        <img src="../img/LeufuMates.png" alt="Icono de la página" width="100" height="100"><br>
+                        <img src="../img/leufumates.png" alt="Icono de la página" width="100" height="100"><br>
                     </a>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
@@ -55,7 +60,5 @@
             <button>Añadir al carrito</button>
           </div>
         </main>
-
-      </div>
     </body>
 </html>

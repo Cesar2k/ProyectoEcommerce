@@ -1,0 +1,197 @@
+/* CARDS*/
+
+.card-container {                   /*Contenedor de las tarjetas*/
+  display: flex;                    /*FlexBox para colocar las tarjetas en fila*/
+  flex-wrap: wrap;                  /*Permite que las tarjetas bajen de fila si no entran en una sola*/
+  justify-content: center;          /*Centrar las tarjetas horizontalmente*/
+  gap: 20px;                        /*Espacio entre las tarjetas*/                     
+  margin-top: 20px;                 /*espacio superior respecto al contenido anterior*/
+}
+
+.card {                                   /*Tarjetas individuales*/                   
+  max-width: 200px;                       /*Ancho máximo de cada tarjeta*/
+  padding: 15px;                          /*Espacio interno alrededor del contenido*/
+  text-align: center;                     /*Centrar el texto dentro de la tarjeta*/
+  background: #f1d6ff;                     /*Fondo blanco para las tarjetas*/
+  border-radius: 8px;                     /*Esquinas redondeadas*/
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /*Sombra sutil para dar profundidad*/
+  transition: transform 0.3s ease;        /*Animación suave al hacer hover*/
+}
+
+.card:hover {                 /*Efecto al pasar el cursor sobre la tarjeta*/
+  transform: scale(1.05);     /*Aumenta poco el tamaño de la tarjeta*/
+}
+
+.card img {                  /*Imagen dentro de la tarjeta*/
+  width: 100%;               /*La imagen ocupa todo el ancho de la tarjeta*/
+  margin-bottom: 10px;       /*espacio entre la imagen y el texto*/
+  border-radius: 8px;        /*Esquinas redondeadas para la imagen*/
+}
+
+.card h2 {                    /*Título dentro de la tarjeta*/
+  margin-bottom: 5px;         /*espacio entre el título y el texto*/
+  font-size: 1.2em;           /*Tamaño de fuente, un poco más grande*/
+  color: #4CAF50;           /*Color verde para el título*/
+}
+
+.card p {                       /*Descripción dentro de la tarjeta*/
+  font-weight: bold;            /*Texto en negrita*/
+  color: #333;                /*Color gris oscuro para el texto*/
+}
+
+.card button {                  /*Botón dentro de la tarjeta*/
+  padding: 8px 12px;            /*Espacio interno del botón*/
+  font-size: 14px;              /*Tamaño del texto del botón*/
+  color: #fff;                /*Color blanco para el texto*/
+  background-color: #4CAF50;  /*Fondo verde para el botón*/
+  border: none;                 /*Sin borde*/
+  border-radius: 4px;           /*Esquinas redondeadas para el botón*/
+  cursor: pointer;              /*cambia el cursor a "mano" al pasar el mouse*/
+  transition: background-color 0.3s ease; /*Animación suave al hacer hover*/
+}
+
+.card button:hover {              /*Efecto al pasar el cursor sobre el botón*/
+  background-color: #388E3C;    /*Fondo verde más oscuro al hacer hover*/
+}
+
+/* MAIN*/
+
+main {                          /*Estilos para el elemento main*/
+  max-width: 1200px;            /*Ancho máximo del contenido principal*/
+  margin: auto;                 /*Centrar el contenido principal*/
+  padding: 20px;                /*Espacio interno alrededor del contenido*/
+}
+
+main p {                        /*Estilos para los párrafos dentro de main*/
+  text-align: center;           /*Centrar el texto de los párrafos*/
+  font-size: 1.1em;             /*Tamaño de fuente ligeramente más grande*/
+  margin-bottom: 20px;          /*Espacio inferior entre párrafos*/
+}
+
+/* GLOBAL */ 
+body {
+  font-family: 'Roboto', sans-serif; /* Fuente principal */
+  background-color: #141414;       /* Fondo oscuro */
+  color: #ffffff;                  /* Texto blanco */
+  line-height: 1.6;                  /* Altura de línea para mejorar la legibilidad */
+}
+
+h1, h2, h3 {                                  /* Encabezados */
+  font-family: 'Montserrat', sans-serif;      /* Fuente para encabezados */
+  color: #b9c6ca;                           /* Color gris claro para los encabezados */
+  text-align: center;                         /* Centrar los encabezados */
+  margin-bottom: 15px;                        /* Espacio inferior */
+}
+
+/*  HEADER / NAV (Menu superiorr)*/
+
+header {                               /* Estilos para el encabezado */
+  background-color: #86d130;        /* Fondo verde */
+  color: #fff;                      /* Texto blanco */ 
+  padding: 10px 0;                    /* Espaciado arriba y abajo */
+}
+
+nav {                                /* Estilos para la barra de navegación */
+  display: flex;                     /* Usar Flexbox para el diseño */
+  justify-content: center;           /* Centrar horizontalmente */
+  align-items: center;               /* Centrar verticalmente */
+  flex-wrap: wrap;                  /* Si no entra, pasa a la sig. linea */
+}
+
+nav img {
+  margin-right: 20px;              /* Espacio a la derecha de la imagen/logo */
+}
+
+nav ul {                           /* Estilos para la lista de navegación */
+  display: flex;                   /* Usar Flexbox para el diseño */                        
+  flex-wrap: wrap;                 /* Si no entra, pasa a la sig. linea */
+  list-style: none;                /* Quitar viñetas */
+  margin: 0;                       /* Quitar margen */
+  padding: 0;                      /* Quitar padding */
+}
+
+nav ul li {                        /* Estilos para los elementos de la lista */
+  margin: 0 10px;                  /* Espacio entre los elementos */
+}
+
+nav ul li a {                               /* Estilos para los enlaces de navegación */
+  font-family: 'Montserrat', sans-serif;    /* Fuente para los enlaces */
+  font-weight: bold;                        /* Texto en negrita */
+  color: #fff;                            /* Color blanco para los enlaces */
+  text-decoration: none;                    /* Quitar subrayado */
+  padding: 8px 12px;                        /* Espacio interno del enlace */
+  transition: background-color 0.3s ease;    /* Animación suave al hacer hover */
+}
+
+nav ul li a:hover {                          /* Efecto al pasar el cursor sobre los enlaces */
+  background-color: #388E3C;               /* Fondo verde más oscuro al hacer hover */
+  border-radius: 4px;                        /* Esquinas redondeadas */
+}
+
+/* LOGIN / REGISTRO*/
+
+body.login,                              /* Estilos específicos para las páginas de login y registro */
+body.registro {                          
+  display: flex;                         /* Usar Flexbox para centrar el formulario */
+  justify-content: center;               /* Centrar horizontalmente */
+  align-items: center;                   /* Centrar verticalmente */
+  height: 100vh;                         /* Altura completa de la ventana */
+  background-color: #ffffff;           /* Fondo blanco para las páginas de login y registro */
+  font-family: 'Poppins', sans-serif;     /* Fuente para las páginas de login y registro */
+}
+
+.form-container {                               /* Contenedor del formulario */
+  width: 320px;                                 /* Ancho fijo para el formulario */
+  padding: 40px 30px;                           /* Espacio interno alrededor del contenido */
+  text-align: center;                           /* Centrar el texto dentro del formulario */
+  background: #00000081;                     /*Fondo oscuro traslucido*/
+  border-radius: 12px;                         /* Esquinas redondeadas */
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);     /* Sombra sutil para dar profundidad */
+  font-family: 'Poppins', sans-serif; /* Se hereda a hijos */ 
+}
+
+.form-container img {                          /* Imagen/logo dentro del formulario */
+  margin-bottom: 10px;                         /* Espacio entre la imagen y el texto */
+  border-radius: 50%;                          /* Imagen circular */
+}
+
+.form-container h1 {                           /* Título dentro del formulario */
+  margin-bottom: 20px;                         /* Espacio entre el título y el texto */
+  font-size: 1.8em;                           /* Tamaño de fuente grande */
+  color: #4CAF50;                           /* Color verde para el título */
+}
+
+.form-container input {                       /* Campos de entrada dentro del formulario */
+  width: 90%;                                 /* Campos ocupan el 90% del ancho del contenedor */
+  margin: 8px 0;                              /* Espacio entre los campos */
+  padding: 10px;                              /* Espacio interno dentro de los campos */
+  font-size: 14px;                            /* Tamaño de fuente */
+  border: 1px solid #ccc;                   /* Borde gris claro */
+  border-radius: 8px;                         /* Esquinas redondeadas */
+  outline: none;                              /* Quitar el contorno por defecto */
+  transition: border-color 0.3s ease;         /* Animación suave al hacer focus */
+}
+
+.form-container input:focus {                 /* Efecto al enfocar los campos de entrada */
+  border-color: #4CAF50;                    /* Cambia el color del borde a verde */
+}
+
+.form-container input::placeholder {           /* Estilos para el texto placeholder (marcadores de posi) dentro de los campos */
+  color: #aaa;                               /* Color gris claro para el texto placeholder */
+}
+ 
+.form-container button {                      /* Botón dentro del formulario */
+  margin-top: 10px;                           /* Espacio superior */
+  padding: 10px 20px;                         /* Espacio interno del botón */
+  font-size: 16px;                            /* Tamaño del texto del botón */
+  color: #fff;                              /* Color blanco para el texto */
+  background-color: #4CAF50;                /* Fondo verde para el botón */
+  border: none;                               /* Sin borde */
+  border-radius: 8px;                         /* Esquinas redondeadas para el botón */
+  cursor: pointer;                            /* Cambia el cursor a "mano" al pasar el mouse */
+  transition: background-color 0.3s ease;     /* Animación suave al hacer hover */
+}
+
+.form-container button:hover {                /* Efecto al pasar el cursor sobre el botón */
+  background-color: #388E3C;                /* Fondo verde más oscuro al hacer hover */ 
+}
