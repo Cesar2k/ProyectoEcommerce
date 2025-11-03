@@ -1,5 +1,5 @@
   //  NAVBAR DINÁMICO  //  
-  // Detecta si está en una página dentro de /pages/ para ajustar rutas
+  // Detecta si está en una página dentro de /pages/ para ajustar rutas. Importante para que no se rompan las imagenes  y links.
   const estoyEnPages = window.location.pathname.includes("/pages/");
   const baseHome   = estoyEnPages ? "../index.html" : "./index.html";
   const baseImg    = estoyEnPages ? "../img/" : "./img/";
@@ -35,7 +35,7 @@
         </ul>
       </nav>
     `;  
-  }
+  } //aunque lo hice con .map y .join, tambien podemos armar el navbar con un forEach y concatenando strings.
 
   document.addEventListener("DOMContentLoaded", CrearNavBar);  //crea el navbar cuando el DOM esté cargado
 
@@ -46,7 +46,7 @@
 
     if (email === "admin@leufu.com" && password === "1234") {             //verifica las credenciales (con mail y contraseña fijas para este ejemplo)
       localStorage.setItem("usuario", email);                             //guarda el usuario en localStorage
-      alert("Inicio de sesión exitoso");                                  // muestra un mensaje de éxito
+      console.log("Inicio de sesión exitoso");                                  // muestra un mensaje de éxito
       window.location.href = baseHome;                                   // vuelve al home según dónde estés
     } else {
       alert("Email o contraseña incorrectos");
@@ -56,7 +56,7 @@
   // LOGOUT CIERRE //
   function logout() {                                               //función para manejar el logout
     localStorage.removeItem("usuario");                             //elimina el usuario de localStorage
-    alert("Sesión cerrada");                                        // muestra un mensaje de cierre de sesión
+    console.log("Sesion cerrada con exito");                                       // muestra un mensaje de cierre de sesión. tambien se puede usar console.log()
     const loginUrl = basePages + "login.html";                      // redirige a la página de login
     window.location.href = loginUrl;                                // redirige a login según dónde estés
   }
