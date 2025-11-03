@@ -2,7 +2,7 @@
   // Detecta si está en una página dentro de /pages/ para ajustar rutas
   const estoyEnPages = window.location.pathname.includes("/pages/");
   const baseHome   = estoyEnPages ? "../index.html" : "./index.html";
-  const baseImg    = estoyEnPages ? "../img/" : "./img/";
+  const baseImg    = estoyEnPages ? "/img/" : "./img/";
   const basePages  = estoyEnPages ? "./" : "./pages/"; // para catmates, login, etc.
 
   const NavItems = [  //todos los elementos/items del navbar
@@ -24,14 +24,14 @@
 
     header.innerHTML =                                    //genera el HTML del navbar
      `
-      <nav>
+        <<nav>
         <a href="${baseHome}">
           <img src="${baseImg}leufumates.png" alt="Logo Leufu Mates" width="100" height="100">
         </a>
         <ul>
           ${items.map(item =>
-            `<li><a href="${item.url}" ${item.accion ? `onclick="${item.accion}"` : ""}>${item.titulo}</a></li>` //si el item tiene una acción, la agrega al enlace
-          ).join("")} 
+            `<li><a href="${item.url}" ${item.accion ? `onclick="${item.accion}"` : ""}>${item.titulo}</a></li>`
+          ).join("")}
         </ul>
       </nav>
     `;  
