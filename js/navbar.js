@@ -37,7 +37,7 @@
     `;  
   } //aunque lo hice con .map y .join, tambien podemos armar el navbar con un forEach y concatenando strings.
 
-  document.addEventListener("DOMContentLoaded", CrearNavBar);  //crea el navbar cuando el DOM esté cargado
+  document.addEventListener("DOMContentLoaded", CrearNavBar);  //crea el navbar cuando el DOM esté cargado. DOM = Document Object Model(API que representa la estructura del documento HTML)
 
   //  LOGIN  //
   function login() {                                                     //función para manejar el login
