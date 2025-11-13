@@ -408,27 +408,78 @@ body.registro {
    RESPONSIVE para celus y tablets, etc
 */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
+  /* ----- NAVBAR ----- */
   nav {
     flex-direction: column;
-    justify-content: center;
+    padding: 15px 10px;
+    text-align: center;
+  }
+
+  nav img {
+    margin: 0 auto 10px auto;
   }
 
   nav ul {
+    flex-direction: column;
+    gap: 8px;
     margin-top: 10px;
+    width: 100%;
+    padding: 0;
   }
 
+  nav ul li {
+    margin: 0;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+  }
+
+  /* Contenedor de usuario + logout */
   .nav-right {
-    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 12px;
   }
 
-  .card {
-    max-width: 90%;
+  .btnLogout {
+    width: 90%;
+    text-align: center;
   }
 
+  /* ----- CARDS ----- */
   .card-container {
     flex-direction: column;
     align-items: center;
+    width: 100%;
+  }
+
+  .card {
+    max-width: 95%;
+    width: 90%;
+  }
+
+  .sub-container {
+    grid-template-columns: 1fr; 
+  }
+
+  /*  carrito y su barra  */
+  #carritoSidebar {
+    width: 80vw;
+  }
+
+  /*  Boton flotante carrito  */
+  #btnCarritoFlotante {
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    font-size: 26px;
   }
 }
+
