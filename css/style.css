@@ -468,9 +468,14 @@ body.registro {
     grid-template-columns: 1fr; 
   }
 
-  /*  carrito y su barra  */
+  /* carrito y su barra  */
   #carritoSidebar {
-    width: 80vw;
+  width: 80vw;
+  transform: translateX(-100%);  
+}
+
+#carritoSidebar.mostrar {
+  transform: translateX(0); 
   }
 
   /*  Boton flotante carrito  */
