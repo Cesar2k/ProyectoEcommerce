@@ -2,73 +2,54 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Leufu Mates - Bombillas</title>
-  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Fuentes de Google -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
-  <!--js-->>
-  <script src="../js/navbar.js" defer></script>
-  <script src="../js/productos.js" defer></script>
-
-<script>document.addEventListener("DOMContentLoaded", () => mostrarProductos("bombilla"));</script> <!-- Llama a la función para mostrar productos de la categoría "bombilla" -->
-
-
-  <!-- CSS (ruta correcta para Pages) -->
+    <!-- link para css-->
   <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="../index.html"> <!--Imagen envuelta en un link HTML. permite apretar la imagen de cualquier categoria y volver al home-->
-        <img src="/img/leufumates.png" alt="Icono de la página" width="100" height="100">
-      </a>
-    <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./catmates.html">Mates</a></li>
-        <li><a href="./catbombillas.html">Bombillas</a></li>
-        <li><a href="./catextras.html">Extras</a></li>
-        <li><a href="./login.html">Loguin</a></li>
-        <li><a href="./registrarse.html">Registro</a></li>
-      </ul>
-    </nav>
-  </header>
 
+<body>
+
+
+ <!--Boton del carrito flotanto ubicado del lado derecho inferior-->
+  <button id="btnCarritoFlotante">🛒</button>
+
+  <header></header>
   <main>
     <h1>Bombillas</h1>
-    <p>Elegí entre nuestras Bombillas</p>
-
-    <!-- Contenedor de las tarjetas de productos -->
-    <div class="card-container">
-
-      <div class="card">
-        <img src="../img/bombilla 17.jpg" alt="Bombilla pico de loro 17cm" width="250" height="300">
-        <h2>Bombilla Pico Loro 17cm Acero inox.</h2>
-        <p>$12.000</p>
-        <button>Añadir al carrito</button>
-      </div>
-
-      <div class="card">
-        <img src="../img/bombilla 15.jpg" alt="Bombilla pico de loro 15cm" width="250" height="300">
-        <h2>Bombilla Pico Loro 15cm Acero inox.</h2>
-        <p>$10.000</p>
-        <button>Añadir al carrito</button>
-      </div>
-
-      <div class="card">
-        <img src="../img/plana.jpg" alt="Bombilla plana" width="250" height="300">
-        <h2>Bombilla plana Acero Inox.</h2>
-        <p>$8.000</p>
-        <button>Añadir al carrito</button>
-      </div>        
-
-    </div><!-- fin card-container -->
+    <p>Elegí entre nuestras bombillas</p>
+    <div class="card-container"></div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Leufu Mates</p> <!--Copi pie de pagina-->
-  </footer>
+  <aside id="carritoSidebar">  <!-- carrito que se deslizaaa -->
+    <h2>Carrito</h2>
+    <ul id="listaCarrito"></ul>
+
+    <div id="carritoTotal">
+      <p><strong>Total:</strong> $<span id="totalMonto">0</span></p>   <!-- total del carrito y los productos agregados-->
+    </div>
+          <!-- boton para vaciar el carrito logicamente xd-->
+    <button id="vaciarCarrito">Vaciar carrito</button>
+  </aside>
+<footer class="footer-min">
+  <p>Seguinos</p>
+
+  <div class="footer-redes">
+    <a href="https://instagram.com/leufumates" target="_blank">Instagram</a>
+    <a href="https://wa.me/5492942650209" target="_blank">WhatsApp</a> 
+  </div>
+
+  <p>2025 Leufu Mates · Patagonia Argentina</p>
+</footer>
+
+
+  <script src="../js/navbar.js"></script>
+  <script src="../js/productos.js"></script>
+
+  <!--muestra los productos de la categoria bombilla--> <!--una llamada a funcion que esta dentro de js-->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => mostrarProductos("bombilla"));  
+  </script>
+
 </body>
 </html>

@@ -1,64 +1,55 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Leufu Mates - CatMates</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--En google fonts podemos encontrar varias fuentes de letras. Forma de asegurar que se van a ver las letras que nosotros elegimos, ya que si las espeficamos
-        desde la pc, solo se ven si estan en la pc-->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet"> <!-- fuente desde Google Fonts -->
-        <link rel="stylesheet" href="../css/style.css">   <!--Enlace a la hoja de estilos-->
-        <script src="../js/navbar.js" defer></script> 
-        <script src="../js/productos.js" defer></script>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Leufu Mates - Extras</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- link para css x2 xd-->
 
-        
-          <script>document.addEventListener("DOMContentLoaded", () => mostrarProductos("extra"));</script> <!-- Llama a la función para mostrar productos de la categoría "extra" -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    
+  <button id="btnCarritoFlotante">🛒</button>
+
+  <header></header>
+
+  <main>
+    <h1>Extras</h1>
+    <p>Accesorios y complementos</p>
+    <div class="card-container"></div>
+  </main>
+
+  <aside id="carritoSidebar">
+    <h2>Carrito</h2>
+    <ul id="listaCarrito"></ul>
+
+    <div id="carritoTotal">
+      <p><strong>Total:</strong> $<span id="totalMonto">0</span></p>
+    </div>
+
+    <button id="vaciarCarrito">Vaciar carrito</button>
+  </aside>
+
+  <footer class="footer-min">
+  <p>Seguinos</p>
+
+  <div class="footer-redes">
+    <a href="https://instagram.com/leufumates" target="_blank">Instagram</a>
+    <a href="https://wa.me/5492942650209" target="_blank">WhatsApp</a> 
+  </div>
+
+  <p>2025 Leufu Mates · Patagonia Argentina</p>
+</footer>
 
 
-    </head>
-    <body>
-        <header>
-            <nav>                
-                    <a href="../index.html"> <!--Imagen envuelta en un link HTML. permite apretar la imagen de cualquier categoria y volver al home-->
-                        <img src="../img/leufumates.png" alt="Icono de la página" width="100" height="100"><br>
-                    </a>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./catmates.html">Mates</a></li>
-                    <li><a href="./catbombillas.html">Bombillas</a></li>
-                    <li><a href="./catextras.html">Extras</a></li>
-                    <li><a href="./login.html">Loguin</a></li>
-                    <li><a href="./registrarse.html">Registro</a></li>
-                </ul>
-            </nav>
-        </header>
-    <main>
-          <h1>Extras</h1>
-          <p>Elegí entre nuestros Extras</p>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/productos.js"></script>
+<!-- Lo mismo que en el cat bombillas pero con extras -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => mostrarProductos("extra"));
+  </script>
 
-          <div class="card-container">
-          <div class="card">
-            <img src="../img/canasto cuero para auto.jpg" alt="canasto de cuero" width="250" height="300">
-            <h2>Canasto para palanca de cambios</h2>
-            <p>$20.000</p>
-            <button>Añadir al carrito</button>
-          </div>
-
-          <div class="card">
-            <img src="../img/canasto cuero.jpg" alt="canasto de Cuero" width="250" height="300">
-            <h2>Canasto cuero color Borravino</h2>
-            <p>$30.000</p>
-            <button>Añadir al carrito</button>
-          </div>
-
-          <div class="card">
-            <img src="../img/tapa anti viento.jpg" alt="Tapa viento" width="250" height="250">
-            <h2>Tapa antiviento</h2>
-            <p>$20.000</p>
-            <button>Añadir al carrito</button>
-          </div>
-        </main>
-    </body>
+</body>
 </html>

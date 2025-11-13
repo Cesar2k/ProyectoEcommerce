@@ -1,52 +1,60 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Leufu Mates</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet"> <!--Fuentes de Google para letras-->
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Leufu Mates - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/style.css">   <!--Enlace a la hoja de estilos-->
-        <script src="js/navbar.js" defer></script>
-        <script src="js/productos.js" defer></script>
-    </head>
-    <body>
-        <header>
-            
-        </header>
+  <!-- Fuentes para las letras desde gulugulu -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
 
-         <main>
-             <h1>Bienvenidos a Leufu Mates</h1>      
-             <p>Tu espacio de Mates, Bombillas y accessorios.</p>  
+  <!-- Estilos "CSS" -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
 
-             <h2>Productos Destacados</h2>
+<body>
 
-             <div class="card-container">   <!--agregar elementos con FlexBox-->
+  <!-- Botón del carrito flotante-->
+  <button id="btnCarritoFlotante">🛒</button>
 
-                    <div class="card">
-                        <img src="img/torpedo.jpg" alt="Mate Torpedo" width="250" height="300">
-                        <h2>Mate Torpedo</h2>
-                        <p>$30.000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/bombilla 17.jpg" alt="Bombilla pico de loco 17cm" width="250" height="300">
-                        <h2>Bombilla Pico Loro de 17cm</h2>
-                        <p>$40.000</p>
-                        <button>Añadir al carrito</button>
-                    </div>
-                    <div class="card">
-                        <img src="img/imperial Borravino.JPEG" alt="Mate Imperial borravino base bolitas" width="250" height="300">
-                        <h2>Mate Imperial base bolita</h2>
-                        <p>$25.000</p> <br>
-                        <button>Añadir al carrito</button>
-                    </div>
-                </div>
-         </main>
-         <footer>
-            <p>&copy; 2025 Leufu Mates</p>    <!--Copi pie de pagina-->
-         </footer>
-    </body>
+  <header></header>
+
+  <main>
+    <h1>Bienvenido a Leufu Mates</h1>
+    <p>Productos seleccionados para vos</p>
+    <div class="card-container"></div>
+  </main>
+
+  <!-- Carrito en el lado izquierdo -->
+  <aside id="carritoSidebar">
+    <h2>Carrito</h2>
+    <ul id="listaCarrito"></ul>
+
+    <div id="carritoTotal">
+      <p><strong>Total:</strong> $<span id="totalMonto">0</span></p>
+    </div>
+
+    <button id="vaciarCarrito">Vaciar carrito</button>
+  </aside>
+
+<footer class="footer-min">
+  <p>Seguinos</p>
+
+  <div class="footer-redes">
+    <a href="https://instagram.com/leufumates" target="_blank">Instagram</a>
+    <a href="https://wa.me/5492942650209" target="_blank">WhatsApp</a> 
+  </div>
+
+  <p>2025 Leufu Mates · Patagonia Argentina</p>
+</footer>
+
+
+  <!-- Js -->
+  <script src="./js/navbar.js"></script>
+  <script src="./js/productos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", mostrarProductosHome);
+  </script>
+
+</body>
 </html>
