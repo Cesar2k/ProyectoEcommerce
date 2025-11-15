@@ -1,9 +1,9 @@
 // Navbar dinámico con login y logout. ademas de rutas adaptativas segun la ubicacion del archivo.
 
-// Detecta si estamos dentro de la carpeta /pages/
+// nos fiamos si estamos dentro de la carpeta /pages/
 const navEnPages = window.location.pathname.includes("/pages/");
 
-// Rutas base
+// Rutas base. para ver si estamos en el luigar correcto
 const baseHome  = navEnPages ? "../index.html" : "./index.html";
 const baseImg   = navEnPages ? "../img/" : "./img/";
 const basePages = navEnPages ? "./" : "./pages/";
@@ -31,12 +31,13 @@ function CrearNavBar() {
     ? NavItems.filter(i => i.titulo !== "Ingreso" && i.titulo !== "Registro" && i.titulo !== "Cerrar sesión")
     : NavItems.filter(i => i.titulo !== "Cerrar sesión");
 
+   // generamos dinamicamente el cotenido del header de la web, creamos la barra de navegacion completa.
   header.innerHTML = `
     <nav class="nav-container">
       
        
       <a href="${baseHome}" class="nav-logo">
-        <img src="${baseImg}leufumates.png" alt="Logo Leufu Mates" width="100" height="100">
+        <img src="${baseImg}leufumates.webp" alt="Logo Leufu Mates" width="100" height="100">
       </a>
 
 
