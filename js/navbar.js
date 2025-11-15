@@ -31,7 +31,7 @@ function CrearNavBar() {
     ? NavItems.filter(i => i.titulo !== "Ingreso" && i.titulo !== "Registro" && i.titulo !== "Cerrar sesión")
     : NavItems.filter(i => i.titulo !== "Cerrar sesión");
 
-   // generamos dinamicamente el cotenido del header de la web, creamos la barra de navegacion completa.
+   // generamos dinamicamente el cotenido del header de la web, creamos la barra de navegacion completa. (Te odio Png, aguante Webp)
   header.innerHTML = `
     <nav class="nav-container">
       
@@ -60,7 +60,7 @@ function CrearNavBar() {
 
 document.addEventListener("DOMContentLoaded", CrearNavBar);
 
-// LOGIN: con permisos para cualquier usuario. 
+// login: con permisos para cualquier usuario 
 function login() {
   const email = document.getElementById("email")?.value.trim() || "";
   const pass  = document.getElementById("password")?.value.trim() || "";

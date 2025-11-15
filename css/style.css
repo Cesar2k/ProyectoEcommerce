@@ -43,7 +43,7 @@ nav {
   padding: 10px 20px;
 }
 
-/* Logo que deberia cambiar por un PNG, se ve horrible el fondo */
+/* Logo que deberia cambiar por un webp, se ve horrible el fondo */
 nav img {
   border-radius: 8px;
 }
@@ -319,11 +319,8 @@ body.registro {
   transform: scale(1.08);
 }
 
-
-
-
 /* 
-  Carrito lateral
+  Carrito lateral 
 */
 
 #carritoSidebar {
@@ -376,7 +373,7 @@ body.registro {
 
 
 /* 
-  Botón flotante carrito
+  Botón flotante carrito (quedo bien feo)
 */
 
 #btnCarritoFlotante {
@@ -385,7 +382,7 @@ body.registro {
   right: 25px;
   width: 60px;
   height: 60px;
-  background-color: #30d193;
+  background-color: #333f2b;
   border-radius: 50%;
   border: none;
   color: white;
@@ -405,7 +402,7 @@ body.registro {
 
 
 /* 
-   RESPONSIVE para celus y tablets, etc
+   responsive para celus y tablets, etc
 */
 
 @media (max-width: 768px) {
