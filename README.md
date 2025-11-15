@@ -10,7 +10,7 @@
 <ul>
   <li><strong>Repositorio GitHub:</strong> https://github.com/Cesar2k/ProyectoEcommerce.git</li>
   <li><strong>Vercel:</strong> https://proyecto-ecommerce-snowy.vercel.app/</li>
-  <li><strong>Video Explicativo (Drive):</strong> (NO ME TENGO QUE OLVIDAR DE COLOCAR EL LINK DEL VIDEO ACA, PERO SEGURO ME OLVIDO xd)</li>
+  <li><strong>Video Explicativo (Drive):</strong> https://drive.google.com/file/d/1L4ABzQw9i0zlj2Kl0w46TkuxPfGxTAjt/view?usp=drive_link </li>
 </ul>
 <br>
 
