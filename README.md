@@ -236,7 +236,6 @@ LeufuMates/
 El proyecto permitió aplicar todos los conocimientos de Aplicaciones Web 1:  
 HTML, CSS, JavaScript, manejo de JSON, almacenamiento local y diseño responsive.  
 <br><br>
-Leufu Mates se convirtió en un ecommerce funcional, escalable y con  
-una base sólida para seguir creciendo en próximas materias.
+La web se convirtio paso a paso en una web relativamente solita y con posibilidad de escalabilidad!
 </p>
 <br>
