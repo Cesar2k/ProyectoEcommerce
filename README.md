@@ -2,9 +2,18 @@
 <h3 align="center">Proyecto Integrador Final – Aplicaciones Web 1</h3>
 <br>
 
+
 <h2> Alumno</h2>
 <p><strong>Fiad, Marcos César Andrés</strong><br>Año 2025</p>
 <br>
+
+<h2>Resumen del Ecommerce</h2>
+<p>
+Leufu Mates es un ecommerce desarrollado con HTML, CSS, JavaScript y Json,
+que permite visualizar productos, gestionarlos mediante un carrito de compras,
+autenticar usuarios, navegar entre categorías y cargar dinámicamente el
+catálogo desde un archivo JSON, sin necesidad de backend.
+</p>
 
 <h2> Links del Proyecto</h2>
 <ul>
